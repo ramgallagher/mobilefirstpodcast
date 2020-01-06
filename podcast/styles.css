@@ -10,7 +10,15 @@ html {
     float: left;
     margin: 10px 0 0 10px;
 }
-
+@media (min-width: 768px) {
+    .barra img {
+        margin: 0.7em 2em;
+    }
+    .nav {
+        margin: 0.7em 3em;
+    }
+    
+}
 .nav {
     text-align: right;
     height: 70px;
@@ -88,6 +96,7 @@ label {
 
 }
 
+
 .contenedor h1 {
     font-family: 'IBM Plex Sans', sans-serif;
     color: #272e4f;
@@ -109,6 +118,7 @@ label {
 
 }
 
+
 .boton h2 {
     text-transform: uppercase;
     margin: 2rem 1rem;
@@ -128,6 +138,23 @@ label {
     cursor: pointer;
 
 }
+@media (min-width: 768px) {
+    .contenedor h1 {
+        width: 800px;
+        margin:  3em 0 0 3em;
+    }
+    .contenedor p {
+        width: 600px;
+        margin: 1em 8em;
+    }
+    .boton {
+        width: 226px;
+        margin: 0 6em;
+        height: auto;
+        
+    }
+}
+
 
 .contenedor-canales h1 {
     margin: 6rem 0 1rem 1rem;
@@ -138,12 +165,32 @@ label {
 
 }
 
+
 .contenedor-canales {
 
     display: inline-block;
     background-image: linear-gradient(90deg, #272e4f, #2c365d);
     clip-path: polygon(100% 0, 100% 94%, 0 100%, 0 5%);
     height: 1300px;
+    width: 100%;
+
+}
+
+
+@media (min-width: 768px) {
+    .contenedor-canales h1 {
+        text-align: left;
+        margin-left: 4em;
+    }
+
+    .contenedor-canales{
+        text-align: center;
+        height: 900px;
+    }
+    .contenedor-canales iframe{
+        width: 40%;
+        margin: 1em;
+    }
 
 }
 
@@ -157,6 +204,7 @@ label {
     transform: translateY(-140px);
 
 }
+
 
 .contenedor-nosotros {
     margin: 0 1rem;
@@ -184,6 +232,31 @@ label {
     height: 5%;
     font-family: 'IBM Plex Mono', monospace;
 }
+@media (min-width: 768px) {
+    .contenedor-nosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contenedor-nosotros p {
+        margin-top: 1em;
+        width: 450px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    .contenedor-nosotros h2{
+        width: 400px;
+        margin-top: 2em;
+    }
+    .imagen-telefono img {
+        width: 400px;
+        height: auto;
+        
+    }
+    .imagen-telefono{
+        text-align: center;
+    }
+}
+
 
 .contenedor-invitados {
     display: flex;
@@ -203,6 +276,23 @@ label {
     font-weight: 400;
     padding: auto;
 }
+
+@media (min-width: 768px) {
+    .contenedor-invitados {
+        display: inline-block;
+        
+        margin: 0;
+        font-size: 0;
+    }
+    .contenedor-invitados img{
+        width: 506px;
+    }
+    .contenedor-invitados h2 {
+        margin: 2em 0 1em 4em;
+        width: 400px;
+    }
+}
+
 .contenedor-temas {
     display: flex;
     flex-direction: column;
@@ -233,6 +323,26 @@ label {
     width: 200px;
     font-weight: 700;
 }
+
+
+@media (min-width: 768px) {
+    .contenedor-temas {
+        display: block;
+    }
+    .contenedor-temas h2 {
+        width: 800px;
+        margin: 1em 0 1em 4em;
+        font-size: 48px;
+    }
+    .contenedor-iconos{
+        display: inline-block;
+        margin: auto 2.5em;
+    }
+    .iconos {
+        text-align: center;
+    }
+}
+
 .contenedor-novedades {
     display: flex;
     flex-direction: column;
@@ -275,6 +385,18 @@ label {
     color: #f2f2f0;
     cursor: pointer;
 }
+
+@media (min-width: 768px) {
+    .boton-2 h2{
+        width: 345px;
+        font-size: 18px;
+    }
+    .contenedor-novedades{
+        
+    }
+}
+
+
 footer {
     display: flex;
     flex-direction: column;
@@ -289,4 +411,18 @@ footer h5 {
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 400;
     font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    footer {
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 4em;
+    }
+    footer i{
+        margin: auto 1em;
+    }
+    footer h5 {
+        font-size: 16px;
+    }
 }
