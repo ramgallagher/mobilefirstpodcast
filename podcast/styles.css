@@ -391,6 +391,7 @@ label {
 .iconos {
     margin: auto;
     align-self: center;
+    
 }
 
 .iconos h3 {
@@ -421,6 +422,7 @@ label {
 
     .iconos {
         text-align: center;
+        width: 80%;
     }
 }
 
@@ -466,34 +468,36 @@ label {
     max-width: 800px;
 }
 
-.boton-2 h2 {
+button {
 
     text-transform: uppercase;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 20px;
     color: #f2f2f0;
+    border: none;
     background-color: #ff5e3a;
     width: 90%;
     height: auto;
     margin: auto;
-    padding: 5px;
+    padding: 15px;
     font-weight: 400;
     text-align: center;
 
 }
 
-.boton-2 a {
+button a {
     text-decoration: none;
+    color: white;
 }
 
-.boton-2:hover h2 {
+button:hover {
     background: rgb(128, 193, 111);
     background: linear-gradient(90deg, rgba(128, 193, 111, 1) 0%, rgba(111, 193, 165, 1) 100%);
     cursor: pointer;
 }
 
 @media (min-width: 768px) {
-    .boton-2 h2 {
+    button {
         width: 345px;
         font-size: 18px;
     }
