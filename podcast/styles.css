@@ -480,8 +480,10 @@ button {
     padding: 15px;
     font-weight: 400;
     text-align: center;
-    transform: translateY(-80px);
 
+}
+.boton-2 {
+    transform: translateY(-80px);
 }
 
 button a {
